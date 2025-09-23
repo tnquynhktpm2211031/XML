@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE class SYSTEM "sinhvien.dtd">
 <class>
     <student>
         <name>Tô Như Quỳnh</name>
@@ -16,7 +17,7 @@
     </student>
 
     <student>
-        <name>Lê Mỹ Anh </name>
+        <name>Lê Mỹ Anh</name>
         <id>SV002</id>
         <subjects>
             <subject>

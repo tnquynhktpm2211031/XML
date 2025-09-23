@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<company xmlns:hr="http://company.com/hr" xmlns:dep="http://company.com/department">
+<!DOCTYPE company SYSTEM "nhansu.dtd">
+<company>
+    <department name="Kế toán">
+        <employee id="E001">
+            <name>Nguyễn Văn An</name>
+            <position>Kế toán trưởng</position>
+        </employee>
+        <employee id="E002">
+            <name>Trần Thị Xuân</name>
+            <position>Kế toán viên</position>
+        </employee>
+    </department>
 
-    <dep:department name="Kế toán">
-        <hr:employee id="E001">
-            <hr:name>Nguyễn Văn An </hr:name>
-            <hr:position>Kế toán trưởng</hr:position>
-        </hr:employee>
-        <hr:employee id="E002">
-            <hr:name>Trần Thị Xuân </hr:name>
-            <hr:position>Kế toán viên</hr:position>
-        </hr:employee>
-    </dep:department>
-
-    <dep:department name="Công nghệ thông tin">
-        <hr:employee id="E003">
-            <hr:name>Lê Văn Hào </hr:name>
-            <hr:position>Lập trình viên</hr:position>
-        </hr:employee>
-    </dep:department>
-
+    <department name="Công nghệ thông tin">
+        <employee id="E003">
+            <name>Lê Văn Hào</name>
+            <position>Lập trình viên</position>
+        </employee>
+    </department>
 </company>

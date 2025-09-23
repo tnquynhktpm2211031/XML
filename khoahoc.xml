@@ -1,40 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<elearning xmlns:course="http://example.com/course"
-           xmlns:instructor="http://example.com/instructor"
-           xmlns:student="http://example.com/student">
-    <course:course id="C001" category="Lập trình">
-        <course:title>Python cơ bản</course:title>
+<!DOCTYPE elearning SYSTEM "khoahoc.dtd">
+<elearning>
+    <course id="C001" category="Lập trình">
+        <title>Python cơ bản</title>
 
-        <instructor:instructor id="I001">
-            <instructor:name>Nguyễn Hồng Ân</instructor:name>
-            <instructor:email>nguyenvana@example.com</instructor:email>
-        </instructor:instructor>
+        <instructor id="I001">
+            <name>Nguyễn Hồng Ân</name>
+            <email>nguyenvana@example.com</email>
+        </instructor>
 
-        <course:students>
-            <student:student id="S001" progress="80">
-                <student:name>Trần Thu Nga </student:name>
-            </student:student>
-            <student:student id="S002" progress="50">
-                <student:name>Hoàng Minh Chí </student:name>
-            </student:student>
-        </course:students>
-    </course:course>
-    <course:course id="C002" category="Thiết kế">
-        <course:title>Thiết kế đồ họa với Photoshop</course:title>
+        <students>
+            <student id="S001" progress="80">
+                <name>Trần Thu Nga</name>
+            </student>
+            <student id="S002" progress="50">
+                <name>Hoàng Minh Chí</name>
+            </student>
+        </students>
+    </course>
 
-        <instructor:instructor id="I002">
-            <instructor:name>Lê Văn Hoàng</instructor:name>
-            <instructor:email>led@example.com</instructor:email>
-        </instructor:instructor>
+    <course id="C002" category="Thiết kế">
+        <title>Thiết kế đồ họa với Photoshop</title>
 
-        <course:students>
-            <student:student id="S003" progress="100">
-                <student:name>Phạm Văn Phụng </student:name>
-            </student:student>
-            <student:student id="S004" progress="70">
-                <student:name>Nguyễn Thị Khanh </student:name>
-            </student:student>
-        </course:students>
-    </course:course>
+        <instructor id="I002">
+            <name>Lê Văn Hoàng</name>
+            <email>led@example.com</email>
+        </instructor>
 
+        <students>
+            <student id="S003" progress="100">
+                <name>Phạm Văn Phụng</name>
+            </student>
+            <student id="S004" progress="70">
+                <name>Nguyễn Thị Khanh</name>
+            </student>
+        </students>
+    </course>
 </elearning>
