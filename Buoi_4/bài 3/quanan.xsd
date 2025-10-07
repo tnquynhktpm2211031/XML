@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.example.com/quanan"
+    xmlns="http://www.example.com/quanan"
+    elementFormDefault="qualified">
+
+  <!-- ==================== PHẦN TỬ GỐC ==================== -->
+  <xs:element name="QUANAN">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="NHANVIEN" type="NhanVienType" maxOccurs="unbounded"/>
+        <xs:element name="BAN" type="BanType" maxOccurs="unbounded"/>
+        <xs:element name="MON" type="MonType" maxOccurs="unbounded"/>
+        <xs:element name="HOADON" type="HoaDonType" maxOccurs="unbounded"/>
+        <xs:element name="CTHD" type="CTHDType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+
+    <!-- ==================== RÀNG BUỘC KHÓA DUY NHẤT ==================== -->
+    <xs:unique name="uniqueNhanVien">
+      <xs:selector xpath="NHANVIEN"/>
+      <xs:field xpath="MANV"/>
+    </xs:unique>
+
+    <xs:unique name="uniqueBan">
+      <xs:selector xpath="BAN"/>
+      <xs:field xpath="TENBAN"/>
+    </xs:unique>
+
+    <xs:unique name="uniqueMon">
+      <xs:selector xpath="MON"/>
+      <xs:field xpath="MAMON"/>
+    </xs:unique>
+
+    <xs:unique name="uniqueHoaDon">
+      <xs:selector xpath="HOADON"/>
+      <xs:field xpath="SOHD"/>
+    </xs:unique>
+
+    <!-- ==================== KHÓA NGOẠI ==================== -->
+    <xs:keyref name="fk_HoaDon_NhanVien" refer="uniqueNhanVien">
+      <xs:selector xpath="HOADON"/>
+      <xs:field xpath="MANV"/>
+    </xs:keyref>
+
+    <xs:keyref name="fk_HoaDon_Ban" refer="uniqueBan">
+      <xs:selector xpath="HOADON"/>
+      <xs:field xpath="TENBAN"/>
+    </xs:keyref>
+
+    <xs:keyref name="fk_CTHD_HoaDon" refer="uniqueHoaDon">
+      <xs:selector xpath="CTHD"/>
+      <xs:field xpath="SOHD"/>
+    </xs:keyref>
+
+    <xs:keyref name="fk_CTHD_Mon" refer="uniqueMon">
+      <xs:selector xpath="CTHD"/>
+      <xs:field xpath="MAMON"/>
+    </xs:keyref>
+
+  </xs:element>
+
+  <!-- ==================== KIỂU DỮ LIỆU CHO CÁC THỰC THỂ ==================== -->
+
+  <!-- NHÂN VIÊN -->
+  <xs:complexType name="NhanVienType">
+    <xs:sequence>
+      <xs:element name="MANV" type="xs:string"/>
+      <xs:element name="TENNV" type="xs:string"/>
+      <xs:element name="SDT" type="xs:string"/>
+      <xs:element name="DIACHI" type="xs:string"/>
+      <xs:element name="GIOITINH" type="xs:string"/>
+      <xs:element name="USERNAME">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="6"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="PASSWORD">
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="10"/>
+            <xs:maxLength value="50"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- BÀN -->
+  <xs:complexType name="BanType">
+    <xs:sequence>
+      <xs:element name="TENBAN" type="xs:string"/>
+      <xs:element name="SOBAN" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- MÓN -->
+  <xs:complexType name="MonType">
+    <xs:sequence>
+      <xs:element name="MAMON" type="xs:string"/>
+      <xs:element name="TENMON" type="xs:string"/>
+      <xs:element name="GIA" type="xs:float"/>
+      <xs:element name="HINHANH" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- HÓA ĐƠN -->
+  <xs:complexType name="HoaDonType">
+    <xs:sequence>
+      <xs:element name="SOHD" type="xs:integer"/>
+      <xs:element name="NGAYLAP" type="xs:date"/>
+      <xs:element name="TONGTIEN" type="xs:float"/>
+      <xs:element name="MANV" type="xs:string"/>
+      <xs:element name="TENBAN" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- CHI TIẾT HÓA ĐƠN -->
+  <xs:complexType name="CTHDType">
+    <xs:sequence>
+      <xs:element name="SOHD" type="xs:integer"/>
+      <xs:element name="MAMON" type="xs:string"/>
+      <xs:element name="SOLUONG" type="xs:integer"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUANAN xmlns="http://www.example.com/quanlyquanan"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.example.com/quanlyquanan quanlyquanan.xsd">
+
+  <DSBAN>
+    <BAN>
+      <TENBAN>BAN01</TENBAN>
+      <SOBAN>1</SOBAN>
+    </BAN>
+    <BAN>
+      <TENBAN>BAN02</TENBAN>
+      <SOBAN>2</SOBAN>
+    </BAN>
+    <BAN>
+      <TENBAN>BAN03</TENBAN>
+      <SOBAN>3</SOBAN>
+    </BAN>
+    <BAN>
+      <TENBAN>BAN04</TENBAN>
+      <SOBAN>4</SOBAN>
+    </BAN>
+    <BAN>
+      <TENBAN>BAN05</TENBAN>
+      <SOBAN>5</SOBAN>
+    </BAN>
+  </DSBAN>
+
+  <DSNHANVIEN>
+    <NHANVIEN>
+      <MANV>NV01</MANV>
+      <TENNV>Võ Thị Anh Thư</TENNV>
+      <SDT>0326601572</SDT>
+      <DIACHI>123 Lê Lợi, Q1</DIACHI>
+      <GIOITINH>Nữ</GIOITINH>
+      <USERNAME>admin01</USERNAME>
+      <PASSWORD>123456789a</PASSWORD>
+    </NHANVIEN>
+    <NHANVIEN>
+      <MANV>NV02</MANV>
+      <TENNV>Trần Ngọc Hân </TENNV>
+      <SDT>0902268390</SDT>
+      <DIACHI>45 Nguyễn Huệ, Q1</DIACHI>
+      <GIOITINH>Nữ</GIOITINH>
+      <USERNAME>user02</USERNAME>
+      <PASSWORD>abcdef12345</PASSWORD>
+    </NHANVIEN>
+    <NHANVIEN>
+      <MANV>NV03</MANV>
+      <TENNV>Phạm Minh Cường</TENNV>
+      <SDT>0903978802</SDT>
+      <DIACHI>78 Hai Bà Trưng</DIACHI>
+      <GIOITINH>Nam</GIOITINH>
+      <USERNAME>user03</USERNAME>
+      <PASSWORD>pass789</PASSWORD>
+    </NHANVIEN>
+    <NHANVIEN>
+      <MANV>NV04</MANV>
+      <TENNV>Lê Thu Dung</TENNV>
+      <SDT>0904608078</SDT>
+      <DIACHI>99 Lý Tự Trọng</DIACHI>
+      <GIOITINH>Nữ</GIOITINH>
+      <USERNAME>user04</USERNAME>
+      <PASSWORD>user123</PASSWORD>
+    </NHANVIEN>
+    <NHANVIEN>
+      <MANV>NV05</MANV>
+      <TENNV>Đỗ Văn Em</TENNV>
+      <SDT>0905300678</SDT>
+      <DIACHI>15 Nguyễn Trãi</DIACHI>
+      <GIOITINH>Nam</GIOITINH>
+      <USERNAME>user05</USERNAME>
+      <PASSWORD>demo789</PASSWORD>
+    </NHANVIEN>
+  </DSNHANVIEN>
+
+
+  <DSMON>
+    <MON>
+      <MAMON>M001</MAMON>
+      <TENMON>Cơm tấm Long Xuyên</TENMON>
+      <GIA>35000</GIA>
+      <HINHANH>comtam.jpg</HINHANH>
+    </MON>
+    <MON>
+      <MAMON>M002</MAMON>
+      <TENMON>Hủ tiếu Nam Vang</TENMON>
+      <GIA>40000</GIA>
+      <HINHANH>hutieu.jpg</HINHANH>
+    </MON>
+    <MON>
+      <MAMON>M003</MAMON>
+      <TENMON>Bún bò Huế</TENMON>
+      <GIA>45000</GIA>
+      <HINHANH>bunbo.jpg</HINHANH>
+    </MON>
+    <MON>
+      <MAMON>M004</MAMON>
+      <TENMON>Phở bò </TENMON>
+      <GIA>50000</GIA>
+      <HINHANH>phobo.jpg</HINHANH>
+    </MON>
+    <MON>
+      <MAMON>M005</MAMON>
+      <TENMON>Bánh mì thịt</TENMON>
+      <GIA>20000</GIA>
+      <HINHANH>banhmi.jpg</HINHANH>
+    </MON>
+  </DSMON>
+
+ 
+  <DSHOADON>
+    <HOADON>
+      <SOHD>HD01</SOHD>
+      <NGAYLAP>2025-10-07</NGAYLAP>
+      <TONGTIEN>70000</TONGTIEN>
+      <MANV>NV01</MANV>
+      <TENBAN>BAN01</TENBAN>
+      <CTHD>
+        <MAMON>M001</MAMON>
+        <SOLUONG>2</SOLUONG>
+      </CTHD>
+    </HOADON>
+
+    <HOADON>
+      <SOHD>HD02</SOHD>
+      <NGAYLAP>2025-10-07</NGAYLAP>
+      <TONGTIEN>40000</TONGTIEN>
+      <MANV>NV02</MANV>
+      <TENBAN>BAN02</TENBAN>
+      <CTHD>
+        <MAMON>M002</MAMON>
+        <SOLUONG>1</SOLUONG>
+      </CTHD>
+    </HOADON>
+
+    <HOADON>
+      <SOHD>HD03</SOHD>
+      <NGAYLAP>2025-10-06</NGAYLAP>
+      <TONGTIEN>90000</TONGTIEN>
+      <MANV>NV03</MANV>
+      <TENBAN>BAN03</TENBAN>
+      <CTHD>
+        <MAMON>M003</MAMON>
+        <SOLUONG>2</SOLUONG>
+      </CTHD>
+    </HOADON>
+
+    <HOADON>
+      <SOHD>HD04</SOHD>
+      <NGAYLAP>2025-10-05</NGAYLAP>
+      <TONGTIEN>100000</TONGTIEN>
+      <MANV>NV04</MANV>
+      <TENBAN>BAN04</TENBAN>
+      <CTHD>
+        <MAMON>M004</MAMON>
+        <SOLUONG>2</SOLUONG>
+      </CTHD>
+    </HOADON>
+
+    <HOADON>
+      <SOHD>HD05</SOHD>
+      <NGAYLAP>2025-10-04</NGAYLAP>
+      <TONGTIEN>40000</TONGTIEN>
+      <MANV>NV05</MANV>
+      <TENBAN>BAN05</TENBAN>
+      <CTHD>
+        <MAMON>M005</MAMON>
+        <SOLUONG>2</SOLUONG>
+      </CTHD>
+    </HOADON>
+  </DSHOADON>
+
+</QUANAN>

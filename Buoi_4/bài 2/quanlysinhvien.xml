@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DSSV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="sinhvien.xsd">
+  <KHOA>
+    <MA>CNTT</MA>
+    <TEN>congnghethongtin</TEN>
+  </KHOA>
+  <KHOA>
+    <MA>QTKD</MA>
+    <TEN>quantrikinhdoanh</TEN>
+  </KHOA>
+  <LOP>
+    <MALOP>CT01</MALOP>
+    <TENLOP>Cong nghe 1</TENLOP>
+    <MAKHOA>CNTT</MAKHOA>
+  </LOP>
+  <LOP>
+    <MALOP>QT01</MALOP>
+    <TENLOP>Quan tri 1</TENLOP>
+    <MAKHOA>QTKD</MAKHOA>
+  </LOP>
+  <SINHVIEN>
+    <MSSV>SV01</MSSV>
+    <HOTEN>Võ Thị Anh Thư</HOTEN>
+    <EMAIL>vtathu@student.ctuet.edu</EMAIL>
+    <DIACHI>Cần Thơ</DIACHI>
+    <SDT>0912345678</SDT>
+    <MALOP>CT01</MALOP>
+  </SINHVIEN>
+  <SINHVIEN>
+    <MSSV>SV02</MSSV>
+    <HOTEN>Tô Như Quỳnh</HOTEN>
+    <EMAIL>tnquynh@student.ctuet.edu</EMAIL>
+    <DIACHI>Cần Thơ</DIACHI>
+    <SDT>0987654321</SDT>
+    <MALOP>QT01</MALOP>
+  </SINHVIEN>
+
+</DSSV>
