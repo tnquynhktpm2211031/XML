@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "donhang.dtd">
+<orders>
+    <order id="O001" customer="Nguyễn Trí Thức" date="2025-03-02">
+        <item id="P001" quantity="2" price="500">
+            <name>Điện thoại Samsung</name>
+        </item>
+        <item id="P002" quantity="1" price="1000">
+            <name>Laptop Dell</name>
+        </item>
+    </order>
+
+    <order id="O002" customer="Trần Bảo An" date="2025-03-05">
+        <item id="P003" quantity="3" price="200">
+            <name>Tai nghe Bluetooth</name>
+        </item>
+        <item id="P004" quantity="1" price="1500">
+            <name>MacBook Pro</name>
+        </item>
+        <item id="P005" quantity="5" price="50">
+            <name>Sạc dự phòng</name>
+        </item>
+    </order>
+</orders>

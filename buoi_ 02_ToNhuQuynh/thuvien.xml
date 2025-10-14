@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE thuvien SYSTEM "thuvien.dtd">
+<thuvien>
+    <sach>
+        <title>Lập Trình Java</title>
+        <author>Nguyễn Tiến Dũng</author>
+        <year>2020</year>
+        <genre>Tin học - CNTT</genre>
+    </sach>
+    <sach>
+        <title>Nhập Môn Cơ Sở Dữ Liệu</title>
+        <author>Đào Phương Vi</author>
+        <year>2005</year>
+        <genre>Giáo trình đại học</genre>
+    </sach>
+    <sach>
+        <title>Giáo trình Lập trình Web</title>
+        <author>TS. Lê Văn An </author>
+        <year>2012</year>
+        <genre>Giáo trình đại học, lập trình ứng dụng</genre>
+    </sach>
+</thuvien>
