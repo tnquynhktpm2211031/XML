@@ -1,0 +1,44 @@
+<school>
+    <student>
+        <id>SV01</id>
+        <name>Tô Như Quỳnh </name>
+        <date>2004-03-26</date>
+    </student>
+    <student>
+        <id>SV02</id>
+        <name>Lê Thị Hồng Cầm</name>
+        <date>1998-01-21</date>
+    </student>
+    <student>
+        <id>SV03</id>
+        <name>Lê Thị Nhã Vy</name>
+        <date>2005-01-11</date>
+    </student>
+
+    <!--Thêm
+    2 sinh viên mới -->
+
+    <student>
+        <id>SV04</id>
+        <name>Võ THị Anh Thư</name>
+        <date>2004-01-15</date>
+    </student>
+    <student>
+        <id>SV05</id>
+        <name>Trần Công Anh</name>
+        <date>2004-06-01</date>
+    </student>
+
+    <enrollment>
+        <studentRef>SV01</studentRef>
+        <course>Toan101</course>
+    </enrollment>
+    <enrollment>
+        <studentRef>SV02</studentRef>
+        <course>Vatly203</course>
+    </enrollment>
+    <enrollment>
+        <studentRef>SV03</studentRef>
+        <course>Vatly203</course>
+    </enrollment>
+</school>
