@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "users": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["username", "password", "emails", "age", "address"],
+        "properties": {
+          "username": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9]+$",
+            "minLength": 3,
+            "maxLength": 15
+          },
+          "password": {
+            "type": "string",
+            "minLength": 8,
+            "pattern": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[@$!%*?&]).+$"
+          },
+          "emails": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "email"
+            },
+            "minItems": 1
+          },
+          "age": {
+            "type": "integer",
+            "minimum": 13,
+            "maximum": 100
+          },
+          "address": {
+            "type": "object",
+            "required": ["city"],
+            "properties": {
+              "city": { "type": "string" },
+              "street": { "type": "string" }
+            }
+          },
+          "hobbies": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 2 }
+          },
+          "isVerified": {
+            "type": "boolean",
+            "default": false
+          }
+        }
+      }
+    }
+  },
+  "required": ["users"]
+}
